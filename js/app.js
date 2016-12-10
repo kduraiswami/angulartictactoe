@@ -1,4 +1,5 @@
 var app = angular.module('ticTacToeApp', ['ngRoute']);
+app.controller('gameCtrl', function($scope){});
 
 app.config(function($routeProvider){
 	$routeProvider
