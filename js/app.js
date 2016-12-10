@@ -1,10 +1,10 @@
-var app = angular.module('ticTacToeApp', []);
+var app = angular.module('ticTacToeApp', ['ngRoute']);
 
 app.config(function($routeProvider){
 	$routeProvider
 		.when('/',{
 			templateUrl: 'partials/tictactoe.html',
-			controller: 'GameCtrl'
+			controller: 'gameCtrl'
 		})
 		.otherwise({
 			redirectTo: '/'
