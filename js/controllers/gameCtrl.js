@@ -20,7 +20,9 @@ function gameCtrl($scope, game){
 
 		location = (row * 3) + col;
 
-		if (game.board && game.board.canMove)
+		if (game.board && game.board.canMove){
+			
+		}
 	}
 }
 
