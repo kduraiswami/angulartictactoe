@@ -17,7 +17,7 @@ var Game = function(){
 Game.prototype = {
 	start: function(){
 		this.board = new Board();
-	}
+	},
 
 	move: function(index){
 		this.checkBoardStatus();
@@ -25,7 +25,7 @@ Game.prototype = {
 			
 		if (this.currentPlayer.isComputer)
 			this.computerMove();
-	}
+	},
 
 	checkBoardStatus: function(){
 		var boardStatus = this.board.checkStatus();
@@ -39,11 +39,11 @@ Game.prototype = {
 				break;
 		}
 
+	},
 
+	computerMove: function(){
 
 	}
-
-
 }
 
 function switchPlayer(){
