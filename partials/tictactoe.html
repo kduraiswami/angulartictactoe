@@ -1,7 +1,7 @@
-<div class="wrapper">
+<div class="wrapper" ng-controller="gameCtrl">
 	<div class="action-bar">
-		<input type="checkbox" value="{{computer_first}}" ng-model="computer_first" ng-checked="computer_first" />Computer First
-		<button id="start-game" class="btn btn-primary" ng-click="startGame()">Start new game</button>
+		<input type="checkbox" value="{{computer_starts}}" ng-model="computer_starts" ng-checked="computer_starts" />Computer Starts?
+		<button id="start-game" class="btn btn-primary" ng-click="startGame()">New Game</button>
 	</div>
 
 	<div class="tictactoe">
@@ -14,5 +14,5 @@
 		</div>
 	</div>
 
-	<div class="status-bar" ng-show="status_message.length > 0">{{status_message}}</div>
+	<div class="status-bar" ng-show="game_status.length > 0">{{game_status}}</div>
 </div>
