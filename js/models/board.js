@@ -21,13 +21,12 @@ Board.prototype = {
 
 	},
 
-	validMove: function(index){
-		return typeof this.board[index] === "undefined";
-	},
-
 	checkStatus: function(){
-
+		
 	}
 
 }
 
+function validMove(index){
+	return typeof this.board[index] === "undefined";
+}
