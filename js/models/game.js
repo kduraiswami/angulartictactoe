@@ -38,16 +38,9 @@ Game.prototype = {
 				this.tie = true;
 				break;
 		}
-
-	},
-
-	computerMove: function(){
-
 	}
 }
 
 function switchPlayer(){
 	return this.currentPlayer.isComputer ? this.humanPlayer : this.computerPlayer;
 }
-
-
